@@ -10,7 +10,7 @@ st.set_page_config(page_title="Heart Health Status", layout="wide")
 st.title("Welcome to Heart Health Status ❤️")
 
 # Load data
-df = pd.read_csv(r"D:\Diploma DC\MID_Project\HEALTH_HEART_2022.csv")
+df = pd.read_csv(r"D:\Diploma DC\Deployment MID PROJECT\HEALTH_HEART_2022.zip", compression='zip')
 st.write("Original DataFrame:")
 st.dataframe(df)
 

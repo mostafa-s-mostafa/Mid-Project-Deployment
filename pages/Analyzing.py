@@ -7,7 +7,7 @@ import seaborn as sns
 from io import StringIO
 
 st.header("Let's Start Some Analysis 🧪")
-df = pd.read_csv(r"D:\Diploma DC\MID_Project\HEALTH_HEART_2022.csv")
+df = pd.read_csv(r"D:\Diploma DC\Deployment MID PROJECT\pages\HEALTH_HEART_2022.zip", compression='zip')
 st.write("Original DataFrame:")
 st.dataframe(df.head())
 
