@@ -11,6 +11,8 @@ st.title("Welcome to Heart Health Status ❤️")
 
 # Load data
 df = pd.read_csv("HEALTH_HEART_2022.zip", compression='zip')
+df = df.sample(frac=0.5, random_state=42).reset_index(drop=True)
+
 st.write("Original DataFrame:")
 st.dataframe(df)
 
