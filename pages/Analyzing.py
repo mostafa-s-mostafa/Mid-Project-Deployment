@@ -7,8 +7,7 @@ import seaborn as sns
 from io import StringIO
 
 st.header("Let's Start Some Analysis 🧪")
-df = pd.read_csv("HEALTH_HEART_2022.zip", compression='zip')
-df = df.sample(frac=0.5, random_state=42).reset_index(drop=True)
+df = pd.read_csv('HEALTH_HEART_2022_reduced.csv')
 
 st.write("Original DataFrame:")
 st.dataframe(df.head())
